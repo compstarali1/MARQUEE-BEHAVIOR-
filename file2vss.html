@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=0.31">
+  <title>3D Animated Buttons</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  background: #00000000;
+}
+
+.bubble {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.25);
+  animation: animate 3s ease-in-out infinite;
+}
+
+.bubble:nth-child(2) {
+  position: relative;
+  zoom: 0.85;
+  left: -50px;
+  top: -100px;
+  animation-delay: -4s;
+}
+
+.bubble:nth-child(3) {
+  position: relative;
+  zoom: 0.45;
+  right: -80px;
+  top: -300px;
+  animation-delay: -6s;
+}
+
+.bubble:nth-child(4) {
+  position: relative;
+  zoom: 0.65;
+  left: -190px;
+  bottom: -400px;
+  animation-delay: -4s;
+}
+
+.bubble:nth-child(5) {
+  position: relative;
+  zoom: 0.5;
+  left: 250px;
+  top: 200px;
+  animation-delay: -4s;
+  }
+
+.bubble:nth-child(6) {
+  position: relative;
+  zoom: 0.65;
+  left: 100px;
+  top: 350px;
+  animation-delay: -2s;
+}
+
+@keyframes animate {
+
+  0%,
+  100% {
+    transform: translateY(-20px);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+}
+
+.bubble::before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: 45px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 10;
+  filter: blur(1px);
+}
+
+.bubble::after {
+  content: '';
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 10;
+  filter: blur(1px);
+}
+
+.bubble span {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.bubble span:nth-child(1) {
+  inset: 10px;
+  border-left: 15px solid #0fb4ff;
+  filter: blur(3px);
+}
+
+.bubble span:nth-child(2) {
+  inset: 10px;
+  border-right: 15px solid #ff4484;
+  filter: blur(3px);
+}
+
+.bubble span:nth-child(3) {
+  inset: 20px;
+  border-top: 15px solid #ffeb3b;
+  filter: blur(3px);
+}
+
+.bubble span:nth-child(4) {
+  inset: 30px;
+  border-left: 15px solid #ff4484;
+  filter: blur(0px);
+}
+
+.bubble span:nth-child(5) {
+  inset: 10px;
+  border-bottom: 10px solid #fff;
+  filter: blur(3px);
+  transform: rotate(330deg);
+  }
+
+.bubble span:nth-child(6) {
+  inset: 10px;
+  border-bottom: 15px solid #AF84CC;
+  filter: blur(3px);
+  transform: rotate(300deg);
+}
+  
+  </style>
+
+</head>
+
+<body>
+  <div class="bubble">
+<span><img src="https://i.imgur.com/FcKKiG3.gif" alt="Name" width="250px" height="250px"></span>
+<span><img src="https://i.imgur.com/c2gF3Tr.gif" alt="Name" width="250px" height="250px"></span>
+<span><img src="https://i.imgur.com/1qFTvrJ.png" alt="Name" width="250px" height="250px"></span>
+<span><img src="https://i.imgur.com/ohdQNnd.png" alt="Name" width="250px" height="250px"></span>
+<span><img src="https://i.imgur.com/CPPavSx.png" alt="Name" width="250px" height="250px"></span>
+  </div>
+  <div class="bubble">
+<span><img src="https://i.imgur.com/gcUmv1Z.png" alt="Name" width="250px" height="250px"></span>
+<span><img src="https://i.imgur.com/pISNBK1.png" alt="Name" width="250px" height="250px"></span>
+<span><img src="https://i.imgur.com/tWUY7NS.png" alt="Name" width="250px" height="250px"></span>
+<span><img src="https://i.imgur.com/ejw7RpO.gif" alt="Name" width="250px" height="250px"></span>
+<span><img src="https://i.imgur.com/LP0Mu9v.gif" alt="Name" width="250px" height="250px"></span>
+  </div>
+  <div class="bubble">
+<span><img src="https://i.imgur.com/sy2aKVh.jpeg" alt="Name" width="250px" height="250px"></span>
+<span><img src="https://i.imgur.com/UzBU0nE.jpeg" alt="Name" width="250px" height="250px"></span>
+<span><img src="https://i.imgur.com/iQq2dDj.jpeg" alt="Name" width="250px" height="250px"></span>
+<span><img src="https://i.imgur.com/bPk8lWt.png" alt="Name" width="250px" height="250px"></span>
+<span><img src="https://i.imgur.com/VpMeGKE.png" alt="Name" width="250px" height="250px"></span>
+  </div>
+  <div class="bubble">
+<span><img src="https://i.imgur.com/sy2aKVh.jpeg" alt="Name" width="250px" height="250px"></span>
+<span><img src="https://i.imgur.com/UzBU0nE.jpeg" alt="Name" width="250px" height="250px"></span>
+<span><img src="https://i.imgur.com/iQq2dDj.jpeg" alt="Name" width="250px" height="250px"></span>
+<span><img src="https://i.imgur.com/bPk8lWt.png" alt="Name" width="250px" height="250px"></span>
+<span><img src="https://i.imgur.com/VpMeGKE.png" alt="Name" width="250px" height="250px"></span>
+  </div>
+  <div class="bubble">
+<span><img src="https://i.imgur.com/Ea6RYeF.jpeg" alt="Name" width="250px" height="250px"></span>
+<span><img src="https://i.imgur.com/viV83z7.jpeg" alt="Name" width="250px" height="250px"></span>
+<span><img src="https://i.imgur.com/iB1Qrog.jpeg" alt="Name" width="250px" height="250px"></span>
+<span><img src="https://i.imgur.com/LHywIHY.jpeg" alt="Name" width="250px" height="250px"></span>
+<span><img src="https://i.imgur.com/pUAXJPT.jpeg" alt="Name" width="250px" height="250px"></span>
+  </div>
+
+  <script>
+    function openDocument(url) {
+      try {
+        if (!url) {
+          throw new Error("URL is required to open the document.");
+        }
+        window.open(url, "_blank");
+      } catch (error) {
+        console.error("Error opening document:", error.message);
+        alert("An error occurred: " + error.message);
+      }
+    }
+  </script>
+</body>
+
+</html>
